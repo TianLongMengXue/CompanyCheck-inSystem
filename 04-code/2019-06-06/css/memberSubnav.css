@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/4 21:31 星期二
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+#memberSubnav{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #252423;
+    border: 2px solid rgba(0,0,0,.8);
+}
+#memberSubnav ul{
+    width: 100%;
+    overflow-y: hidden;
+}
+#memberSubnav li{
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+#memberSubnav li span, #memberSubnav li a{
+    height: 40px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #e3e4e5;
+    opacity: .4;
+    vertical-align: middle;
+    transition: opacity .4s ease, color .4s ease, padding-left .4s ease;
+}
+#memberSubnav li span{
+    width: 15px;
+    font: 12px/20px "微软雅黑";
+}
+#memberSubnav li a{
+    width: auto;
+    font: 16px/20px "微软雅黑";
+    font-weight: 900;
+}
+#memberSubnav li:hover span, #memberSubnav li:hover a{
+    opacity: 1;
+    color: #fff;
+}
+#memberSubnav li span.active, #memberSubnav li a.active{
+    opacity: 1;
+    color: #3CFFEC;
+}
+#memberSubnav li:hover a{
+    padding-left: 6px;
+}
+#memberSubnav li[class=item]{
+    padding-left: 40px;
+}
+#memberSubnav li[class=item] a{
+    height: 20px;
+    font-size: 13px;
+    padding: 0;
+}
+#memberSubnav li[class=item]:hover a{
+    padding-left: 6px;
+}
+#memberSubnav li[class=item]::before{
+    content: '';
+    display: inline-block;
+    height: 12px;
+    width: 1px;
+    background-color: #e3e4e5;
+    box-sizing: border-box;
+    margin-right: 5px;
+    opacity: .4;
+    vertical-align: middle;
+    transition: opacity .4s ease, background-color .4s ease;
+}
+#memberSubnav .item:hover .item::before{
+    background-color: #fff;
+    opacity: 1;
+}
+ #memberSubnav .item a.active{
+     opacity: 1;
+     color: #5A87FF;
+ }

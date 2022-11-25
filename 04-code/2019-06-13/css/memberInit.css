@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/13 10:21 星期四
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+#page{
+    background-color: #03092b;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    width: 1200px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}

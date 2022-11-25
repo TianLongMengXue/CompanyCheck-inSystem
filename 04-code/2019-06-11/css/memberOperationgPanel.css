@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/9 8:43 星期日
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/* 右侧功能操作面板 */
+.right{
+    width: calc(100% - 230px);
+    height: 100%;
+    float: left;
+}
+/* 欢迎横幅区域部分 */
+.welcomeRegion{
+    width: 100%;
+    height: 65px;
+    box-sizing: border-box;
+}
+/* 欢迎横幅内容部分 */
+.welcomeRegion h2{
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    text-align: right;
+    font: 16px/64px "微软雅黑";
+    padding-right: 10px;
+    color: #F6F4F2;
+}
+/* 操作面板部分 */
+.operationPanel{
+    width: calc(100% - 1em);
+    height: calc(100% - 65px);
+}
+/* 操作功能区域 */
+.operation{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(227,228,229,.6);
+}

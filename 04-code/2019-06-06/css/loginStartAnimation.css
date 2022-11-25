@@ -1,0 +1,62 @@
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/3 23:00 星期一
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/*开机动画部分 开始*/
+#startAnimation{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #e3e4e5;
+    z-index: 1;
+}
+#startAnimation span{
+    font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+}
+/*#startAnimation span:nth-child(1){
+    transform: translate(-384px,-60%);
+}
+#startAnimation span:nth-child(2){
+    transform: translate(-272px,-60%);
+}
+#startAnimation span:nth-child(3){
+    transform: translate(-160px,-60%);
+}
+#startAnimation span:nth-child(4){
+    transform: translate(-48px,-60%);
+}
+#startAnimation span:nth-child(5){
+    transform: translate(48px,-60%);
+}
+#startAnimation span:nth-child(6){
+    transform: translate(150px,-60%);
+}
+#startAnimation span:nth-child(7){
+    transform: translate(262px,-60%);
+}
+#startAnimation span:nth-child(8){
+    transform: translate(374px,-60%);
+}*/
+/*开机动画部分 结束*/
+
+/*手机端直接不显示开机动画*/
+@media screen and (max-width: 768px){
+    #startAnimation{
+        display: none;
+    }
+}

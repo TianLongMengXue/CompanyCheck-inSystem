@@ -1,0 +1,85 @@
+<!--
+       Filename:
+    Description:
+        Version: 1.0
+        Created: 2019/6/8 5:58 星期六
+       Revision: none
+       Compiler:
+         Author: DreamDraco SnowBrother
+        Company:
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$永远24K纯帅的十八岁雪哥$</title>
+    <!-- 引入移动设备标签 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- 导入页面的图标 -->
+    <link rel="icon" type="image/x-icon" href="../images/icon.ico">
+    <!-- 引入页面公共初始化样式 -->
+    <link rel="stylesheet" href="../css/publicInit.css">
+    <!-- 引入页面初始化样式 -->
+    <link rel="stylesheet" href="../css/oblivionInit.css">
+    <!-- 引入页面忘记密码表单样式 -->
+    <link rel="stylesheet" href="../css/oblivionPanel.css">
+</head>
+<body>
+<!-- 页面开始部分 开始 -->
+<div id="page">
+    <!-- 页面内容区部分 开始 -->
+    <div class="container">
+        <!-- 忘记密码表单部分 开始 -->
+        <div class="oblivionPanel">
+            <!-- 忘记密码表单区域输入框和重置密码按钮的描边轨迹部分 开始 -->
+            <svg viewBox="0 0 320 300">
+                <defs>
+                    <linearGradient id="linearGradient">
+                        <stop style="stop-color:#ff00ff;" offset="0"/>
+                        <stop style="stop-color:#ff0000;" offset="1"/>
+                    </linearGradient>
+                </defs>
+                <path class="path"
+                      d="M 42.584746,50.21186 281.02049,49.1552 c 13.20046,-0.0415 25.44619,15.19244 25.44619,32.66586 0,17.47343 -12.24621,36.47398 -25.44668,36.51545 l -238.435734,0.7492 c -15.236125,0.0478 -24.937776,17.14303 -24.922123,37.11639 2.81e-4,0.36385 -0.46544,-17.32152 -0.01561,-0.29509 0.449826,17.02641 11.627978,35.72819 24.937777,35.74216 l 238.69789,0.25052 c 16.30687,0.0171 25.68005,15.59369 25.87166,34.51525 0.16812,16.60163 -6.12282,38.75406 -25.58606,38.75406 l -215.435207,0.002 c -9.679849,0.0125 -19.792894,-12.50046 -19.792894,-24.03068 0,-11.5302 10.185581,-24.16857 19.792894,-24.19878 l 190.281747,-0.59786 c 10.45092,-0.0328 19.79293,12.75063 19.79293,24.07437 0,11.53025 -9.34201,24.54913 -19.79293,24.559 L 87.625118,265.169"/>
+            </svg>
+            <!-- 忘记密码表单区域输入框和重置按钮的描边轨迹部分 结束 -->
+            <!-- 忘记密码表单区域信息输入框部分 开始 -->
+            <div class="form">
+                <!-- 忘记密码信息用户名输入框部分 开始 -->
+                <div class="nameBar">
+                    <label for="username">用户名&nbsp;&nbsp;<span>用户名不存在</span></label>
+                    <input type="text" id="username" placeholder="用户名">
+                </div>
+                <!-- 忘记密码信息用户名输入框部分 结束 -->
+                <!-- 忘记密码信息密码输入框部分 开始 -->
+                <div class="wordBar">
+                    <label for="word">身份证号码&nbsp;&nbsp;<span>格式不正确</span></label>
+                    <input type="text" id="word" placeholder="身份证号码">
+                </div>
+                <!-- 忘记密码信息密码输入框部分 结束 -->
+                <!-- 忘记密码验证码输入框部分 开始 -->
+                <div class="captchaBar">
+                    <label for="captcha">验证码 <span>验证码错误</span></label>
+                    <input type="text" id="captcha" placeholder="验证码">
+                    <img src="../images/captcha.jpg" alt="" width="80" height="30" style="vertical-align: bottom">
+                </div>
+                <!-- 忘记密码验证码输入框部分 结束 -->
+                <!-- 忘记密码信息提交登录按钮部分 开始 -->
+                <button id="submit">重置</button>
+                <!-- 忘记密码信息提交登录按钮部分 开始 -->
+            </div>
+            <!-- 忘记密码区域信息输入框部分 结束 -->
+        </div>
+        <!-- 忘记密码表单部分 结束 -->
+    </div>
+    <!-- 页面内容区部分 结束 -->
+</div>
+<!-- 页面开始部分 结束 -->
+</body>
+<!-- 引入页面所需要的jquery.js -->
+<script src="../js/jquery-1.12.4.min.js" type="text/javascript" charset="UTF-8"></script>
+<!-- 引入页面所需要的anime.js -->
+<script src="../js/anime.min.js" type="text/javascript" charset="UTF-8"></script>
+<!-- 引入页面登录表单的动画样式 -->
+<script src="../js/animationForm.js" type="text/javascript" charset="UTF-8"></script>
+</html>

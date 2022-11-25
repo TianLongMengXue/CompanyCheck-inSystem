@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/9 8:40 星期日
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/* 左侧菜单操作栏 */
+.left {
+    width: 230px;
+    height: 100%;
+    float: left;
+}
+
+/* 页面logo部分 */
+.logo {
+    width: 100%;
+    height: 65px;
+}
+
+.logo h1 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+
+.logo a {
+    display: inline-block;
+    background: url("../images/logo.third.png") center left no-repeat;
+    background-size: 50px 50px;
+    text-indent: 55px;
+    font: 20px/64px "微软雅黑";
+    font-weight: 900;
+    color: #00affe;
+}
+
+/* 左侧菜单栏部分 */
+.subNav {
+    width: calc(100% - 20px);
+    height: calc(100% - 65px);
+    margin: 0 13px 0px 7px;
+    overflow-y: auto;
+}
+
+/* 菜单栏功能列表 */
+.subNav > ul {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.subNav > ul > li {
+    border: 1px solid rgba(255, 255, 255, .3);
+    background-color: rgba(227, 228, 229, .15);
+    border-radius: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.subNav > ul > li:hover {
+    background-color: rgba(173, 215, 250, 1);
+}
+
+.subNav > ul > li:nth-child(1) {
+    width: 100%;
+    height: 40px;
+}
+
+.subNav > ul > li:nth-child(n+2) {
+    width: calc(100% - 4em);
+    padding-bottom: 5px;
+    height: 25px;
+    margin-left: 2em;
+}
+
+.subNav a {
+    /*display: inline-block;*/
+    text-align: center;
+    display: block;
+    /*width: auto;*/
+    width: 100%;
+    height: 100%;
+    font: 16px/40px "微软雅黑";
+    /*color: #333;*/
+    color: #08B2E3;
+    /*text-indent: 2em;*/
+    font-weight: 900;
+}
+
+.subNav .item a {
+    font: 14px/20px "微软雅黑";
+    /*color: #333;*/
+    /*transform: rotateY(-90deg);*/
+    /*transform-origin: center center;*/
+}
+
+.active {
+    color: #EE6352 !important;
+}

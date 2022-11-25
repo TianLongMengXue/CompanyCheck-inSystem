@@ -1,0 +1,25 @@
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/5/31 9:03 星期五
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/*页面头部分 开始*/
+#head{
+    width: 100%;
+    height: 64px;
+    border-top: 2px solid darkorange;
+    background-color: rgba(255,255,255,.2);
+    position: relative;
+}
+@media screen and (max-width: 768px){
+    #head{
+        border-top: 1px solid darkorange;
+        height: 32px;
+    }
+}
+/*页面头部分 结束*/

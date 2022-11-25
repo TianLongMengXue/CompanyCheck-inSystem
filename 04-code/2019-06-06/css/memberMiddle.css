@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/4 21:33 星期二
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/*
+    middle部分的响应式布局思路
+        大于等于992px的视为大屏,默认显示左侧的菜单栏和右侧相关的信息操作显示栏
+        当设备位于768px和992px之间的时候默认收起左侧的菜单栏至页面的头部以按钮的显示的方式展示,但是不影响右侧的相关的信息操作显示栏
+        当设备低于768px的时候,这时不仅要将左侧的菜单栏收起至页面的头部以按钮的方式显示,右侧的相关的信息操作显示兰的也要进行单行单列布局
+*/
+#middle{
+    width: 100%;
+    height: 600px;
+}
+#middle .container{
+    width: 100%;
+    height: 100%;
+    display: flex; /* 伸缩布局 */
+    flex-direction: row; /* 内部以x轴正方向排列 */
+    align-items:stretch; /* 内部项目占满容器的高度 */
+}
+#middle .left,#middle .right{
+    box-sizing: border-box;
+}
+@media screen and (min-width: 992px){
+    #middle .container{
+        flex-wrap: nowrap;
+    }
+    #middle .left{
+        flex-grow: 1;
+        max-width: 240px
+    }
+    #middle .right{
+        flex-grow: 4;
+    }
+}

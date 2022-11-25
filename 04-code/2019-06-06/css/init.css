@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/5/31 9:03 星期五
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+*{
+    margin: 0;
+    padding: 0;
+    font: 14px/2 "微软雅黑";
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+/*去除文字类修饰标签的默认样式*/
+strong, b, em, i, del, s, ins, u{
+    font-style: normal;
+}
+html,body{
+    height: 100%;
+    background: linear-gradient(skyblue,white) no-repeat;
+}
+/*引入文字->图片*/
+@font-face{
+    font-family: "icomoon";
+    src: url('../fonts/icomoon.eot?7kkyc2');
+    src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+/*定义自定义字体类*/
+.style-family{
+    font-family: "icomoon"!important;
+}
+/* 定义消息错误 */
+.error{
+    background-color: red;
+    padding: 0 2px;
+    color: #000;
+    font-weight: 900;
+    font-size: 12px;
+}
+/* 定义消息正确 */
+.sure{
+    background-color: green;
+    padding: 0 2px;
+    color: #000;
+    font-weight: 900;
+    font-size: 12px;
+}

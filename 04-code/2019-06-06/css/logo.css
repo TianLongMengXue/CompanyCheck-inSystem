@@ -1,0 +1,47 @@
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/5/31 9:04 星期五
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/*页面logo部分 开始*/
+#logo{
+    /*background: url(../images/logo.png) no-repeat top center;*/
+    /*overflow: hidden;*/
+    float: left;
+    margin-left: 8%;
+    width: 144px;
+    height: 100%;
+}
+#logo > h1{
+    width: 100%;
+    height: 100%;
+}
+#logo > h1 > a{
+    display: block;
+    text-indent: 64px;
+    font: 20px/64px "微软雅黑";
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    background-image: url(../images/logo.png);
+    -webkit-background-size: 63px 63px;
+    background-size: 63px 63px;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px){
+    #logo{
+        width: 88px;
+    }
+    #logo > h1 > a{
+        text-indent: 32px;
+        font: 14px/32px "微软雅黑";
+        background-size: 31px 31px;
+    }
+}
+/*页面logo部分 结束*/

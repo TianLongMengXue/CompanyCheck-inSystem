@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/8 21:05 星期六
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/* 设置页面的背景色 */
+html, body {
+    background: linear-gradient(skyblue, white) no-repeat; /*设置页面的背景色为由蓝色至白的的渐变*/
+}
+
+@media screen and (max-width: 400px) {
+    #page {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 320px;
+    }
+}

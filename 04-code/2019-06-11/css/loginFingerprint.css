@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/7 19:52 星期五
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/* 设置指纹扫描区域的大小 */
+.fingerprintPanel {
+    width: 43.24%;
+    height: 400px;
+    position: relative;
+}
+/* 当页面的可视区域的宽度小于740px时,自栋隐藏指纹扫描部分 */
+@media screen and (max-width: 740px){
+    .fingerprintPanel{
+        display: none;
+    }
+}
+/* 设置指纹扫描区域的高亮部分 */
+.lightPanel {
+    width: 304px;
+    height: 388px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .3);
+    top: 6px;
+    left: 9px;
+}
+
+/* 设置指纹图片 */
+.fingerprintPanel img {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+/* 设置扫描光束的扫描区域大小 */
+.fingerprintPanel .scanning {
+    width: 287px;
+    height: 371px;
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    overflow: hidden;
+}
+
+/* 定义设置扫描光束 */
+.fingerprintPanel .scanning::before {
+    content: '';
+    display: block;
+    background: linear-gradient(rgba(0, 255, 51, 0) 50%, #00ff33 100%);
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    animation-name: scanningBeam; /* 指定动画的名称 */
+    animation-duration: 4s; /* 指定动画持续的时间 */
+    animation-timing-function: linear; /* 指定动画播放的速度曲线 */
+    animation-delay: 0s; /* 指定动画播放的延迟时间 */
+    animation-iteration-count: infinite; /* 指定动画的播放次数 infinite无限循环 */
+    animation-direction: normal; /* 指定动画播放时是否需要逆向的播放 */
+    animation-play-state: running; /* 指定动画播放是正在播放还是暂停 */
+    animation-fill-mode: both; /* 指定动画的开始和结束的位置 */
+}
+
+/* 扫描光束扫描的动画 */
+@keyframes scanningBeam {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 407px;
+    }
+}

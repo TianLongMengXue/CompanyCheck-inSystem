@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/7 17:52 星期五
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/* 页面启动动画部分 开始 */
+.startAnimation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:#e3e4e5 ;/*#1a1a1a*/
+    z-index: 1;
+}
+.inner{
+    width: 992px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+@media screen and (max-width: 992px){
+    .inner {
+        width: 768px;
+        height: 230px;
+    }
+}
+@media screen and (max-width: 768px){
+    .inner {
+        width: 320px;
+        height: 96px;
+    }
+}
+.inner span{
+    width: 1px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #402e2e;
+}
+
+.startAnimation svg {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+}
+
+@media screen and (max-width: 992px){
+    .startAnimation svg {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .startAnimation svg {
+        width: 37px;
+        height: 37px;
+    }
+}
+
+.qian {
+    fill: #87CEEB;
+}
+
+.dao {
+    fill: #ADD8E6;
+}
+
+.xi {
+    fill: #6495ED;
+}
+
+.tong {
+    fill: #1E90FF;
+}
+
+.default {
+    fill: #e3e4e5;
+}

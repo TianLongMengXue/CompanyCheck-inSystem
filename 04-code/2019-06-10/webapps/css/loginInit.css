@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/6 21:21 星期四
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+
+/* 设置页面的背景色 */
+html, body {
+    /*background: linear-gradient(skyblue, white) no-repeat;*/ /*设置页面的背景色为由蓝色至白的的渐变*/
+    background-color: #002c45;
+}
+
+@media screen and (max-width: 740px){
+    #page{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+/* 页面主体部分 */
+.container {
+    /* 设置主体部分为弹性布局,布局的主轴方向为沿x轴方向 */
+    display: flex;
+    flex-direction: row;
+    width: 740px;
+    height: 400px;
+    /*background-color: pink;*/
+    /* 设置内部的弹性元素均保持居中 */
+    /*place-content: center;*/
+}
+
+/* 当可视区域的宽度小于740px的时候对伸缩布局进行调整 */
+@media screen and (max-width: 740px) {
+    .container {
+        flex-direction: column;
+        width: 400px;
+        margin-top: 100px;
+    }
+}
+/* 当可视区域的宽度小于400px的时候对伸缩布局进行调整 */
+@media screen and (max-width: 400px) {
+    .container {
+        flex-direction: column;
+        width: 320px;
+        margin-top: 100px;
+    }
+}

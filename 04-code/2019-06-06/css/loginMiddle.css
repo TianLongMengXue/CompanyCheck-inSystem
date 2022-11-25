@@ -1,0 +1,136 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+::selection {
+    background: #2D2F36;
+}
+
+::-webkit-selection {
+    background: #2D2F36;
+}
+
+::-moz-selection {
+    background: #2D2F36;
+}
+
+#middle {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+#middle .page {
+    display: flex;
+    flex-direction: column;
+    /*width: calc(100% - 40px);
+    height: calc(100% - 40px);*/
+    position: absolute;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 767px) {
+    #middle .page {
+        height: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+}
+#middle .container {
+    display: flex;
+    height: 320px;
+    margin: 0 auto;
+    width: 640px;
+}
+
+@media (max-width: 767px) {
+    #middle .container {
+        flex-direction: column;
+        height: 630px;
+        width: 320px;
+        margin-top: 100px;
+    }
+}
+
+#middle .container .loginForm {
+    background: rgba(255, 255, 255, .6);
+    box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22);
+    color: #000;
+    position: relative;
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    #middle .container .loginForm {
+        flex-shrink: 0;
+        height: 100%;
+        width: 100%;
+        max-height: 350px;
+    }
+}
+#middle .container .loginForm .usernameMessage, #middle .container .loginForm .passwordMessage{
+    margin-left: 5px;
+}
+#middle .container .loginForm span{
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+#middle .container .loginForm span a{
+    color: #c2c2c5;
+}
+#middle .container .loginForm span a:hover{
+    color: #f10215;
+}
+#middle .container .loginForm svg {
+    position: absolute;
+    width: 320px;
+}
+
+#middle .container .loginForm path {
+    fill: none;
+    stroke: url(#linearGradient);;
+    stroke-width: 4;
+    stroke-dasharray: 240 1386;
+}
+
+#middle .container .loginForm .form {
+    margin: 40px 10px 40px 40px;
+    position: absolute;
+}
+
+#middle .container .loginForm label {
+    color: #c2c2c5;
+    display: block;
+    font-size: 14px;
+    height: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#middle .container .loginForm input, #middle .container .loginForm button {
+    background: transparent;
+    border: 0;
+    height: 30px;
+    line-height: 30px;
+    outline: none !important;
+    width: 100%;
+}
+
+#middle .container .loginForm input::-moz-focus-inner, #middle .container .loginForm button::-moz-focus-inner {
+    border: 0;
+}
+#middle .container .loginForm input{
+    color: #000;
+    font-size: 14px;
+}
+#middle .container .loginForm #login {
+    font-size: 20px;
+    margin-top: 44px;
+    margin-left: 15px;
+    transition: color 300ms;
+    color: #7d7d7f;
+}
+
+#middle .container .loginForm #login:hover {
+    color: #404045;
+}

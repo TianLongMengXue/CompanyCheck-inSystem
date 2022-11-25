@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/6 21:32 星期四
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/* 设置页面背景色 */
+html, body {
+    background: linear-gradient(skyblue, #fcfafa) no-repeat;
+}
+
+/* 页面内容区域部分 */
+.container {
+    width: 100%;
+    height: calc(100% - 31px); /* 内容区的宽度为整个页面的高度减去底部部分的高度 */
+    margin-top: 0;
+}

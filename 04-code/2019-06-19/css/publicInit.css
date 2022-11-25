@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/6 21:20 星期四
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+
+/* 去除页面所有元素的margin padding border值 */
+*{
+    margin: 0;
+    padding: 0;
+    /*border: 0;*/
+}
+
+/* 去除a元素的默认下划线 */
+a{
+    text-decoration: none;
+}
+
+/* 去除ul li元素的默认的列表项的标志类型 */
+ul,li{
+    list-style: none;
+}
+
+/*去除文字类修饰标签的默认样式*/
+strong, b, em, i, del, s, ins, u{
+    font-style: normal;
+}
+
+/* 定义登录时消息错误样式 */
+.error {
+    background-color: #f10215;
+    padding: 0 2px;
+    color: #000;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+/* 定义登录时消息正确样式 */
+.sure {
+    background-color: #00ff33;
+    padding: 0 2px;
+    color: #000;
+    font-weight: 900;
+    font-size: 12px;
+}
+html,body{
+    height: 100%; /* 设置html和body与可视区域(初始包含块)的大小相同 */
+    overflow: hidden; /* 设置html和body溢出隐藏 */
+}
+
+::selection {
+    background: #2D2F36;
+}
+
+::-webkit-selection {
+    background: #2D2F36;
+}
+
+::-moz-selection {
+    background: #2D2F36;
+}
+/* 使用loginPage成为整个页面的最高级容器 */
+/* 使用oblivionPage成为整个页面的最高级容器 */
+/* 设置memberPage为页面的最高级容器 */
+#page {
+    /* 设置整个页面的与可视区域(初始包含块)的大小相同并保持绝对的位置相同 */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-top: 3px solid #fa7d3c;
+    /* 设置整个页面的布局为弹性伸缩布局方式,且布局的主轴方向为沿y轴方向 */
+    /*display: flex;
+    flex-direction: column;*/
+    /* 设置内部的弹性元素均保持居中 */
+    /*place-content: center;*/
+}
+/* 页面的内容区域位于页面的水平垂直居中 */
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

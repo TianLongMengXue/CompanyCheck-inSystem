@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/13 10:30 星期四
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+.itemPanel {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.itemInner {
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.itemInner > ul {
+    width: 100%;
+    height: calc(100% / 3);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.itemInner > ul > li {
+    flex-grow: 1;
+    position: relative;
+}
+
+.itemInner > ul > li > a {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #5500ff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    font: 25px/150px "微软雅黑";
+    font-weight: 900;
+    color: #fafafa;
+    transition: background-color 400ms;
+    z-index: 1;
+}
+
+.itemInner > ul > li > a:hover {
+    background-color: hsla(220, 100%, 60%, 1);
+}
+
+.itemInner > ul > li::before, .itemInner > ul > li::after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.itemInner > ul > li::before {
+    width: 170px;
+    height: 170px;
+    background-color: rgba(85, 0, 255, .3);
+}
+
+.itemInner > ul > li::after {
+    width: 160px;
+    height: 160px;
+    background-color: rgba(85, 0, 255, .6);
+}
+
+.itemInner > ul:nth-child(2) > li:nth-child(1) > a, .itemInner > ul:nth-child(2) > li:nth-child(1)::before, .itemInner > ul:nth-child(2) > li:nth-child(1)::after {
+    transform: translateX(85px);
+}
+
+.itemInner > ul:nth-child(2) > li:nth-child(2) > a, .itemInner > ul:nth-child(2) > li:nth-child(2)::before, .itemInner > ul:nth-child(2) > li:nth-child(2)::after {
+    transform: translateX(-85px);
+}
+
+.itemInner > ul > li > a:hover li::before {
+    background-color: rgba(51, 119, 255, .3);
+}
+
+.itemInner > ul > li > a:hover li::after {
+    background-color: rgba(51, 119, 255, .6) !important;
+}

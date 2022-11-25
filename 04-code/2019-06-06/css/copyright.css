@@ -1,0 +1,22 @@
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/5/31 9:05 星期五
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/*页面版权声明部分 开始*/
+#footer > p{
+    text-align: center;
+    line-height: 50px;
+    color: rgba(0,0,0,.4);
+}
+@media screen and (max-width: 768px){
+    #footer > p{
+        font: 12px/30px "微软雅黑";
+    }
+}
+/*页面版权声明部分 结束*/

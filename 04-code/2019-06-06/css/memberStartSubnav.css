@@ -1,0 +1,33 @@
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/4 22:49 星期二
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+#head .startSubnav{
+    display: none;
+}
+@media screen and (max-width: 992px){
+    #head .startSubnav{
+        display: block;
+        float: left;
+        margin-left: 2%;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    #head .startSubnav span{
+        font-size: 16px;
+        font-weight: 900;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #head .startSubnav span:hover{
+        background-color: rgba(0,0,0,.4);
+    }
+}

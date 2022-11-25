@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import url('https://rsms.me/inter/inter-ui.css');
+
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/7 11:19 星期五
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/* 设置登录部分大小颜色样式 */
+.loginPanel {
+    /*background: #474A59;*/
+    /*box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.8);*/
+    /*background-color: rgba(255, 255, 255, .6);*/
+    /*box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22);*/
+    background-color: #23305a;
+    color: #000;
+    width: 56.75%;
+    height: 100%;
+    position: relative;
+}
+
+/* 当可视区域的大小小于740px的时候对登录部分的大小进行修改 */
+@media screen and (max-width: 740px) {
+    .loginPanel {
+        flex-shrink: 0;
+        width: 100%;
+    }
+}
+
+/* 登录区域logo及欢迎横幅部分大小及样式 */
+.logo {
+    width: 100%;
+    height: 64px;
+    transform: translate(0, -50%);
+}
+
+.logo h1 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.logo a {
+    display: inline-block;
+    /*background: url("../images/logo.third.png") no-repeat top left;*/
+    /*text-indent: 70px;*/
+    font: 20px/64px "微软雅黑";
+    color: #00affe;
+    font-weight: 900;
+}
+.logo a img{
+    vertical-align: middle;
+    animation-name: rubberBand; /* 指定动画的名称 */
+    animation-duration: 6s; /* 指定动画持续的时间 */
+    animation-timing-function: linear; /* 指定动画播放的速度曲线 */
+    animation-delay: 0s; /* 指定动画播放的延迟时间 */
+    animation-iteration-count: infinite; /* 指定动画的播放次数 infinite无限循环 */
+    animation-direction: normal; /* 指定动画播放时是否需要逆向的播放 */
+    animation-play-state: running; /* 指定动画播放是正在播放还是暂停 */
+    animation-fill-mode: both; /* 指定动画的开始和结束的位置 */
+}
+@keyframes rubberBand {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* 登录区域输入框和登录按钮的描边轨迹 */
+.loginPanel svg {
+    width: 320px;
+    height: 300px;
+    margin: -32px 50px 0;
+}
+@media screen and (max-width: 740px){
+    .loginPanel svg{
+        margin: -32px 40px 0;
+    }
+}
+/* 当可视区域小于400px的时候设置登录区域输入框和登录按钮的描边轨迹同登录面板相同 */
+@media screen and (max-width: 400px){
+    .loginPanel svg{
+        margin: -32px 0 0;
+    }
+}
+
+.loginPanel path {
+    fill: none;
+    stroke: url(#linearGradient);;
+    stroke-width: 4;
+    stroke-dasharray: 240 1386;
+}
+
+/* 登录区域信息输入框部分 */
+.form {
+    width: 100%;
+    height: 225px;
+    position: absolute;
+    top: 75px;
+}
+
+/* 登录信息用户名密码输入框部分 */
+.nameBar, .wordBar {
+    width: 243px;
+    height: 46px;
+    margin: 0 auto;
+}
+
+.loginPanel label {
+    color: #c2c2c5;
+    display: block;
+    font-size: 14px;
+    height: 16px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* 登录信息用户名密码输入框登录按钮部分 */
+.loginPanel input, .loginPanel button {
+    background: transparent;
+    border: 0;
+    color: #e3e4e5;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    outline: none !important;
+    width: 100%;
+}
+
+.loginPanel input::-moz-focus-inner, .loginPanel button::-moz-focus-inner {
+    border: 0;
+}
+
+.loginPanel #submit {
+    color: #ccc;
+    margin-top: 50px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.loginPanel #submit:hover {
+    color: #aaa;
+}
+
+.loginPanel #submit:active {
+    color: #888;
+    font-size: 18px;
+}
+
+/* 忘记密码链接部分 */
+.oblivion {
+    position: absolute;
+    top: 320px;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+.oblivion a {
+    color: #c2c2c5;
+}
+
+.oblivion a:hover {
+    color: #f10215;
+}
+
+/* 页面尾栏部分 */
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    background-color: rgba(135, 206, 235, .4);
+}
+
+/* 页面版权声明部分 */
+.footer p {
+    font: 12px/2 "微软雅黑";
+    font-weight: 900;
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/6/8 22:53 星期六
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/* 页面底部部分 */
+.footer{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #022b3a;
+}
+.footer p{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #F6F4F2;
+}

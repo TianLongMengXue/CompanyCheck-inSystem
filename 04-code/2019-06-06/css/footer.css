@@ -1,0 +1,22 @@
+/*
+* Filename:
+* Description:
+* Version: 1.0
+* Created: 2019/5/31 9:05 星期五
+* Revision: none
+* Compiler:
+* Author: DreamDraco SnowBrother
+* Company:
+* */
+/*页面底部部分 开始*/
+#footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(227,228,229,.6);
+}
+@media screen and (max-width: 768px){
+    #footer{
+        height: 30px;
+    }
+}
+/*页面底部部分 结束*/
